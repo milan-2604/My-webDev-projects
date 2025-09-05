@@ -1,0 +1,50 @@
+<!-- Create a simple *Tamagotchi-style virtual pet* that you can feed, play with, and let sleep.
+
+---
+
+### 🕹 Features
+
+* Your pet has:
+
+  * hunger, happiness, and energy levels (numbers from 0–100)
+* 3 buttons: *Feed, **Play, **Sleep*
+* Each button changes stats:
+
+  * Feed → +20 hunger (but -10 energy)
+  * Play → +20 happiness (but -15 energy and -10 hunger)
+  * Sleep → +30 energy (but -5 hunger)
+* If any stat reaches 0 → pet "dies" (game over)
+* Optional: Add pet image + reset button -->
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Project</title>
+    <link rel="stylesheet" href="pet.css">
+    <script src="pet.js" defer></script>
+</head>
+
+<body><div id="pet-project">
+    <div id="pet">
+        <h2 id="virtual">🐶 Your Virtual Pet</h2>
+    </div>
+    <div id="div-status">
+        <p id="feeling">Your pet is feeling okay 😊</p>
+        <p id="status">You are in "Living Room"</p>
+    </div>
+    <div id="stats">
+        <p>Hunger: <strong><span id="hunger">50</span></strong></p>
+        <p>Happiness: <strong><span id="happiness">50</span></strong></p>
+        <p>Energy levels: <strong><span id="energy-levels">50</span></strong></p>
+    </div>
+    <div id="buttons">
+        <span><button id="feed">Feed</button></span>
+        <span><button id="play">Play</button></span>
+        <span><button id="sleep">Sleep</button></span>
+    </div></div>
+</body>
+
+</html>

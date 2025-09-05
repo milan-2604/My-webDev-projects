@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker</title>
+    <link rel="stylesheet" href="book.css">
+    <script src="book.js" defer></script>
+</head>
+
+<body>
+    <h1>Book Tracker</h1>
+    <div id="wrapper">
+        <button id="add-new-book" type="button" class="hide-tracker">Add New Book</button>
+        <div id="tracker" class="hide-tracker">
+            <!-- <div id="t-1">
+                <p><strong>Title: </strong>Titanic</p>
+                <p><strong>Author: </strong> shakeshpere</p>
+                <p><strong>Description: </strong>Lorem Ipsum</p>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+             <div id="t-1">
+                <p><strong>Title: </strong>Titanic</p>
+                <p><strong>Author: </strong> shakeshpere</p>
+                <p><strong>Description: </strong>Lorem Ipsum</p>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+             <div id="t-1">
+                <p><strong>Title: </strong>Titanic</p>
+                <p><strong>Author: </strong> shakeshpere</p>
+                <p><strong>Description: </strong>Lorem Ipsum</p>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div> -->
+        </div>
+        <form id="form" class="hide">
+            <div id="form-header">
+                <button id="x" type="button">X</button>
+                <dialog id="modal">
+                    <p>Discard unsaved changes?</p>
+                    <button type="button" id="cancel" >cancel</button>
+                    <button type="button" id="discard">discard</button>
+                </dialog>
+            </div>
+            <div id="form-body">
+                <label for="title">Book Title: </label><input type="text" id="title">
+                <label for="author">Book Author: </label><input type="text" id="author">
+                <label for="description">Book Description</label><textarea id="description"></textarea>
+            </div>
+            <div id="form-footer">
+                <button id="add-book" type="submit">Add Book</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    background: #fff8dc;
+}
+
+#card {
+    max-width: 40em;
+    position: relative;
+    border: 2px solid black;
+    margin: auto; /* fixed typo */
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* nicer shadow */
+    border-radius: 1em;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Remove border from children, optional */
+
+
+/* Image styling and transition */
+img {
+    width: 90%;
+    border-radius: 1em;
+    transition: transform 0.3s ease;
+}
+
+/* Scale image when hovering over the card */
+#card:hover img {
+    transform: scale(1.2) translateY(5px);
+}
+
+/* Text content fade and slide */
+#fades {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Show fades text on card hover */
+#card:hover #fades {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optionally fade/slide up main text content too */
+#content {
+    opacity: 1;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#card:hover #content {
+    transform: translateY(-10px);
+}
+
+/* Special animated element */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        background-color: rgb(255, 0, 0);
+        box-shadow: 0 0 5px rgb(255, 0, 0);
+    }
+    50% {
+        transform: translateY(-0.5em);
+        background-color: rgb(0, 255, 0);
+        box-shadow: 0 0 15px rgb(0, 255, 0);
+    }
+    100% {
+        transform: translateY(0);
+        background-color: rgb(0, 0, 255);
+        box-shadow: 0 0 5px rgb(0, 0, 255);
+    }
+}
+
+#special-element {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background-color: black;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    animation: bounce 2s ease-in-out infinite;
+    box-shadow: 0 0 5px black;
+}

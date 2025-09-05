@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+padding: 0;
+}
+h1{
+    text-align: center;
+}
+#wrapper{width: 768px;
+    padding: 2% 5% 2%;
+    background-color: aquamarine;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#tracker>*{background-color: gold;
+    margin: 3px;
+border: 2px solid black;
+padding: 1%;
+text-align: center;
+}
+#tracker button{
+    background-color: wheat;
+}
+#form{width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+#form-body{width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form-header{width: 100%;
+ 
+    display: flex;
+    justify-content: flex-end;
+}
+#form-footer{
+    width: 100%;
+
+display: flex;
+justify-content: center;
+}
+.hide{
+    display: none !important;
+}
+.hide-tracker{
+    display: none !important;
+}

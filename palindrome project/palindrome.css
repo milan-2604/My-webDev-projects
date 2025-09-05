@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2%;
+    
+}
+#heading{
+    color: blueviolet;
+}
+#main-content{
+    background-color: bisque;
+}
+#result{
+    display: none;
+}
+#info{
+    background-color: beige;
+}
+input, button{
+    margin-left : 1rem;
+}
+#container,#info{
+    width: 70vw;
+}

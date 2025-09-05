@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+#wrapper{ 
+background-color: aquamarine;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+row-gap: 1rem;
+padding: 5%;
+}
+#output{ width: 90%;
+    border: 2px solid black;
+    text-align: center;
+    background-color: blueviolet;
+}
+input{
+    width: 80%;
+}
+button{ border: none;
+   width: 40%;
+  
+   background-color: gold;
+   box-shadow: 2px 2px 2px ;
+}
+button:hover{
+    background-color: goldenrod;
+}
+.hide{
+    display: none !important;
+}
