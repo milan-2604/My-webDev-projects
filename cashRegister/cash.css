@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#change-due{
+    padding: 0.25% 5%;
+    background-color: rgb(100, 98, 98);
+    color: goldenrod;
+    border: red solid 1px;
+    margin: 3%;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+input{
+    background-color: white;
+    text-align: center;
+}
+button{
+    background-color: gold;
+}
+
+#total{
+    padding: 0.5% 4%;
+    background-color: bisque;
+    color:rgb(36, 83, 36);
+    font-weight: bold;
+    border: rgb(196, 31, 31) solid 2px;
+    margin: 3%;
+}
+
+#cash-drawer{
+    padding: 0.5% 4%;
+    border: red solid 1px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hide{
+    display:none;
+}
