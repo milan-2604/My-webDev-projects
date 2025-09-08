@@ -1,44 +1,249 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#container{
-    border: 2px solid green;
-    
-    max-width: 600px;
-   
-  padding: 3% 3%;
-    
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #1e2022, #3a3d40);
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-form div{
-   margin-top: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 19px;
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #ffe26f;
+  font-family: 'Georgia', serif;
+  text-shadow: 2px 2px 4px #000;
 }
+
+body > a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #6890f0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body > a:hover {
+  text-decoration: underline;
+}
+
+#container {
+  background-color: #2b2b2b;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#search-input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  flex: 1;
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 0.5rem 1.2rem;
+  background-color: #ffe26f;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #ffcc00;
+}
+
+
+#output {
+  background-color: #1c1c1c;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+#output div {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+
+.type {
+  display: inline-block;
+  padding: 6px 12px;
+  margin: 5px 5px 0 0;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.normal {
+  background-color: #b7b7aa;
+}
+
+.fire {
+  background-color: #ff6f52;
+}
+
+.water {
+  background-color: #42a1ff;
+}
+
+.electric {
+  background-color: #fecc33;
+}
+
+.grass {
+  background-color: #78cc55;
+}
+
+.ice {
+  background-color: #66ccfe;
+}
+
+.fighting {
+  background-color: #d3887e;
+}
+
+.poison {
+  background-color: #c68bb7;
+}
+
+.ground {
+  background-color: #dfba52;
+}
+
+.flying {
+  background-color: #8899ff;
+}
+
+.psychic {
+  background-color: #ff66a3;
+}
+
+.bug {
+  background-color: #aabb23;
+}
+
+.rock {
+  background-color: #baaa66;
+}
+
+.ghost {
+  background-color: #9995d0;
+}
+
+.dragon {
+  background-color: #9e93f1;
+}
+
+.dark {
+  background-color: #b59682;
+}
+
+.steel {
+  background-color: #abaabb;
+}
+
+.fairy {
+  background-color: #ed99ed;
+}
+
 
 table {
-    margin-top: 7%;
-    border-collapse: collapse; 
-    width: 100%; 
-    border: 2px solid black; 
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #ddd;
 }
 
-th, td {
-    border: 1px solid black; 
-    padding: 8px;            
-    text-align: left; 
-    background-color: aquamarine;       
+th {
+  background-color: #444;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #777;
+}
+
+td {
+  padding: 10px;
+  background-color: #2f2f2f;
+  border-bottom: 1px solid #444;
+}
+
+tr:nth-child(even) td {
+  background-color: #3a3a3a;
 }
 
 
+#special-ability {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border: 2px dashed #ffe26f;
+  background-color: #292929;
+  border-radius: 8px;
+}
 
+#special-ability h3 {
+  color: #ffe26f;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#special-description {
+  font-style: italic;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #search-button {
+    width: 100%;
+  }
+
+  table th, table td {
+    font-size: 0.85rem;
+  }
+}

@@ -7,19 +7,23 @@
 </head>
 <body>
     <h1>RPG Creature Search APP</h1>
+    <a href="https://rpg-creature-api.freecodecamp.rocks/">Click to view Available Creatures</a>
     <div id="container">
-        <form class="search-form">
+        <form id="search-form">
             <label for="search-input" id="search-label">Creature Name or ID: </label>
             <div><input type="text" name="creature" id="search-input" required />
-            <button id="search-button">Search</button></div>
+            <button id="search-button" type="submit">Search</button></div>
         </form>
         <div id="output">
             <div><span>Name: </span><span id="creature-name"></span></div>
             <div><span>ID: </span><span id="creature-id"></span></div>
             <div><span>Weight: </span><span id="weight"></span></div>
             <div><span>Height: </span><span id="height"></span></div>
-            <div id="types">
-                <span>Type: </span><span></span>
+            <div id="special-ability">
+  <h3>Special Ability: <span id="special-name"></span></h3>
+  <p id="special-description"></p>
+</div>
+            <div id="types">             
             </div>
         </div>
         <table>
